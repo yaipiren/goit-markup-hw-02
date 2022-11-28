@@ -64,8 +64,11 @@ ul {
   color: var(--subtitle-text-color);
 }
 
-.navigation :hover,
-:focus {
+.site-nav :hover {
+  color: var(--accent-color);
+}
+
+.site-nav :focus {
   color: var(--accent-color);
 }
 
