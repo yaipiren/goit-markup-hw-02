@@ -1,6 +1,24 @@
+/* колір основного тексту #000000 */
+/* другорядний колір тексту #757575 */
+/* білий #ffffff */
+/* акцент #2196F3 */
+/* основний колір фону #f5f5f5 */
+/* другорядний колір фону #2F303A */
+/* фон хедера #f5f5f5 */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #000000;
+  --subtitle-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-text-color: #ffffff;
+  --primary-background: #f5f5f5;
+  --secondary-background: #2f303a;
+}
+
 .all {
-  color: #757575;
-  background-color: #f5f5f5;
+  color: var(--primary-text-color);
+  background-color: var(--primary-background);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -13,27 +31,27 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1, 19;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--title-text-color);
   text-decoration: none;
 }
 
 .web :hover,
 :focus {
-  color: #000000;
+  color: var(--title-text-color);
 }
 
 .site-name {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .navigation-studio .link {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .navigation-mail .link {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .navigation a {
@@ -41,24 +59,24 @@ ul {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1, 14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--subtitle-text-color);
 }
 
 .navigation :hover,
 :focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .hero-section {
-  background-color: #2f303a;
+  background-color: var(--secondary-background);
 }
 
 .hero-title {
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: var(--white-text-color);
   line-height: 1, 36;
 }
 
@@ -67,9 +85,9 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-  color: #ffffff;
-  background: #2196f3;
+  line-height: 1, 88;
+  color: var(--white-text-color);
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -91,10 +109,10 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1, 14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--subtitle-text-color);
 }
 
 .our-principles {
@@ -102,9 +120,9 @@ ul {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1, 71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .h-activity {
@@ -112,10 +130,10 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1, 17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--subtitle-text-color);
 }
 
 .h-team {
@@ -123,10 +141,10 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1, 17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--subtitle-text-color);
 }
 
 .name {
@@ -134,10 +152,10 @@ ul {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1, 19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--subtitle-text-color);
 }
 
 .position {
@@ -145,23 +163,23 @@ ul {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1, 19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .footer-studio {
-  color: #ffffff;
+  color: var(--white-text-color);
 }
 
 .down {
-  background: #2f303a;
+  background: var(--secondary-background);
 }
 
 .down :hover,
 :focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .adress a {
@@ -169,9 +187,9 @@ ul {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1, 71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-text-color);
 }
 
 .footer-contacts a {
@@ -179,7 +197,7 @@ ul {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1, 71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
