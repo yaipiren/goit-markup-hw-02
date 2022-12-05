@@ -20,10 +20,13 @@
 
 .all {
   color: var(--primary-text-color);
-  background-color: var(--primary-background);
+  background-color: var(--white-text-color);
   font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 ul {
@@ -54,13 +57,6 @@ ul {
   color: var(--accent-color);
 }
 
-.navigation .link {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--subtitle-text-color);
-}
-
 .navigation :hover {
   color: var(--accent-color);
 }
@@ -68,14 +64,22 @@ ul {
   color: var(--accent-color);
 }
 
-.main-navigation a {
-  font-family: 'Roboto';
-  font-style: normal;
+.nav-link {
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--subtitle-text-color);
+}
+
+.navigation-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 
 .site-nav :hover {
@@ -90,7 +94,7 @@ ul {
   color: #212121;
 }
 
-.portfolio {
+.site-nav .portfolio {
   color: #2196f3;
 }
 
@@ -102,7 +106,11 @@ ul {
   text-transform: uppercase;
   text-align: center;
   color: var(--white-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
   line-height: 1.36;
+  letter-spacing: 0.06em;
 }
 
 .button {
@@ -113,6 +121,12 @@ ul {
   color: var(--white-text-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.button :hover,
+:focus {
+  background-color: #188ce8;
 }
 
 .visually-hidden {
@@ -129,8 +143,6 @@ ul {
 }
 
 .principle-item {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -140,9 +152,6 @@ ul {
 }
 
 .our-principles {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -150,19 +159,19 @@ ul {
 }
 
 .h-activity {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--subtitle-text-color);
+}
+
+.team {
+  background-color: #f5f4fa;
 }
 
 .h-team {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -171,9 +180,11 @@ ul {
   color: var(--subtitle-text-color);
 }
 
+.photo {
+  background-color: var(--white-text-color);
+}
+
 .name {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -183,9 +194,6 @@ ul {
 }
 
 .position {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -201,33 +209,23 @@ ul {
   background: var(--secondary-background);
 }
 
-.adress a {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
+.adress-link {
+  text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-text-color);
 }
 
-.footer-contacts a {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
+.footer-navigation-link {
+  text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.link {
-  text-decoration: none;
-}
-
 .project-item {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -236,9 +234,6 @@ ul {
 }
 
 .project-item-description {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -252,6 +247,7 @@ ul {
   line-height: 1.63;
   color: var(--subtitle-text-color);
   background-color: #2196f3;
+  cursor: pointer;
 }
 
 .navigation-button {
@@ -262,4 +258,17 @@ ul {
   color: var(--subtitle-text-color);
   background: var(--button-background);
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.card {
+  background-color: var(--white-text-color);
+}
+
+.footer-contacts {
+  font-style: normal;
+}
+
+.adress {
+  font-style: normal;
 }
