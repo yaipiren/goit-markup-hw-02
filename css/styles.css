@@ -18,12 +18,10 @@
   --button-background: #f5f4fa;
 }
 
-.all {
+body {
   color: var(--primary-text-color);
   background-color: var(--white-text-color);
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -42,11 +40,6 @@ ul {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   text-decoration: none;
-}
-
-.web :hover,
-:focus {
-  color: var(--title-text-color);
 }
 
 .site-name {
@@ -82,11 +75,11 @@ ul {
   color: var(--primary-text-color);
 }
 
-.site-nav :hover {
+.main-navigation :hover {
   color: var(--accent-color);
 }
 
-.site-nav :focus {
+.main-navigation :focus {
   color: var(--accent-color);
 }
 
@@ -124,8 +117,11 @@ ul {
   cursor: pointer;
 }
 
-.button :hover,
-:focus {
+.button:hover {
+  background-color: #188ce8;
+}
+
+.button:focus {
   background-color: #188ce8;
 }
 
